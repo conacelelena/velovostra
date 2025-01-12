@@ -5,10 +5,10 @@
       <a class="flex-none rounded-xl text-xl inline-block font-semibold focus:outline-none focus:opacity-80" href="/" aria-label="VeloVostra">
         <span class="inline-flex items-center gap-x-2 text-xl font-semibold dark:text-white">
           <span class="dark:hidden">
-            <img class="w-10 h-auto" src="velovostra_logo_dark.svg" alt="Logo">
+            <img class="w-10 h-auto" src="/velovostra_logo_dark.svg" alt="Logo">
           </span>
           <span class="invisible dark:visible">
-            <img class="w-10 h-auto" src="velovostra_logo_white.svg" alt="Logo">
+            <img class="w-10 h-auto" src="/velovostra_logo_white.svg" alt="Logo">
           </span>
           VeloVostra
         </span>
@@ -18,9 +18,16 @@
 
     <!-- Button Group -->
     <div class="flex items-center gap-x-2 ms-auto py-1 md:ps-6 md:order-3 md:col-span-3">
-      <button type="button" class="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-xl border border-transparent bg-lime-400 text-black hover:bg-lime-500 transition disabled:opacity-50 disabled:pointer-events-none focus:outline-none focus:bg-lime-500">
-        Sign In
-      </button>
+      <a class="relative inline-block text-black dark:text-white" href="#" aria-current="page">
+          Blog
+      </a>
+      <%= link_to new_user_session_path, class: "relative inline-block text-black dark:text-white" do %>
+        Log in
+      <% end %>
+
+      <%= link_to new_user_registration_path, class: "py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-xl border border-transparent bg-lime-400 text-black hover:bg-lime-500 transition disabled:opacity-50 disabled:pointer-events-none focus:outline-none focus:bg-lime-500" do %>
+        Register
+      <% end %>
 
       <div class="md:hidden">
         <button type="button" class="hs-collapse-toggle size-[38px] flex justify-center items-center text-sm font-semibold rounded-xl border border-gray-200 text-black hover:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none dark:text-white dark:border-neutral-700 dark:hover:bg-neutral-700" data-hs-collapse="#navbar-collapse-with-animation" aria-controls="navbar-collapse-with-animation" aria-label="Toggle navigation">

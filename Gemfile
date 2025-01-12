@@ -63,3 +63,7 @@ gem "jsbundling-rails", "~> 1.3"
 gem "cssbundling-rails", "~> 1.4"
 
 gem "tailwindcss-rails", "~> 3.0"
+
+gem "devise", "~> 4.9"
+
+gem "omniauth", "~> 2.1"

@@ -22,7 +22,13 @@
 
   <body class="dark:bg-neutral-900">
     <%= render "partials/navbar" %>
-    <main class="container">
+    <main class="container mx-auto">
+      <p class="notice">
+          <%= notice %>
+      </p>
+      <p class="alert">
+          <%= alert %>
+      </p>
       <%= yield %>
     </main>
     <%= render "partials/footer" %>
