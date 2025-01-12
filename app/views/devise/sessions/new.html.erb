@@ -17,6 +17,7 @@
             <div class="mt-5">        
               <!-- Form -->
               <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+                <%= render "devise/shared/error_messages", resource: resource %>
                 <div class="grid gap-y-4">
                   <!-- Form Group -->
                   <div>
